@@ -23,7 +23,7 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public boolean existsByNameProduct(String nameProduct) {
-        return productRepository.existsByNameProduct(nameProduct);
+        return productRepository.existsByName(nameProduct);
     }
 
     @Override

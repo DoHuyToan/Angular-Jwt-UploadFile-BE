@@ -5,6 +5,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
+// unique: ko trùng lặp
 @Entity
 @Table(name = "products", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"name"})

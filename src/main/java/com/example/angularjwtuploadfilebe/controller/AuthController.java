@@ -91,6 +91,6 @@ public class AuthController {
         String token = jwtProvider.createToken(authentication);
             UserPrinciple userPrinciple = (UserPrinciple) authentication.getPrincipal();
 //        trả về lớp có trường name và jwtToken
-        return ResponseEntity.ok(new JwtResponse(token, userPrinciple.getName(), userPrinciple.getAuthorities()));
+        return ResponseEntity.ok(new JwtResponse(token, userPrinciple.getName(), userPrinciple.getAvatar(), userPrinciple.getAuthorities()));
     }
 }

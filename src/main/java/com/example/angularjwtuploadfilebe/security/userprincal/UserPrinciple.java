@@ -43,7 +43,13 @@ public class UserPrinciple implements UserDetails {
     public void setName(String name) {
         this.name = name;
     }
-//  gán dữ liệu từ model(role) = Autho của UserDetails
+
+//    Để tạo tài khoản ban đầu sẽ lấy avatar mặc định, nên p get để lấy
+    public String getAvatar() {
+        return avatar;
+    }
+
+    //  gán dữ liệu từ model(role) = Autho của UserDetails
     public static UserPrinciple build(User user){
 //        chuyển từ Set sang List
         List<GrantedAuthority> authorities = user.getRoles().stream().map(role ->
