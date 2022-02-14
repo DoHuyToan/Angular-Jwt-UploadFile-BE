@@ -11,10 +11,11 @@ public class JwtResponse {
     private String avatar;
     private Collection<? extends GrantedAuthority> roles;
 
-//    public JwtResponse(String token, String type, String name, Collection<? extends GrantedAuthority> roles) {
+//    public JwtResponse(String token, String type, String name, String avatar, Collection<? extends GrantedAuthority> roles) {
 //        this.token = token;
 //        this.type = type;
 //        this.name = name;
+//        this.avatar = avatar;
 //        this.roles = roles;
 //    }
 
